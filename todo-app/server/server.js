@@ -14,12 +14,10 @@ Meteor.methods({
     },
     
     'updatePosition': function(id, rank, fam) {
-      Todos.update(id, {$set: {rank: rank}});
-        if(fam) {
+    Todos.update(id, {$set: {rank: rank}});
+    if(fam) {
       Todos.update(id, {$set: {family: fam}});  
-        }
-      
-    },
+    }},
 
     'insertTodo': function (task, family) {
         var currentUserId = Meteor.userId();
