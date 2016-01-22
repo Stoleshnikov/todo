@@ -1,0 +1,15 @@
+.block {
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: grey;
+}
+
+li {
+    list-style: none;
+}

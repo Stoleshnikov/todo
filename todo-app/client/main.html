@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <title>TODOAPP</title>
+</head>
+
+<body>
+
+    <div>{{>loginButtons}}</div>
+
+    {{#if currentUser}}
+
+    <div class="block">
+        <h1>Today</h1> {{>today}}
+    </div>
+
+    <div class="block">
+        <h1>Week</h1> {{>week}}
+    </div>
+
+    <div class="block">
+        <h1>Junk</h1> {{>junk}}
+    </div>
+
+    {{/if}}
+
+</body>

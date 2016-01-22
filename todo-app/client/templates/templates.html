@@ -1,0 +1,41 @@
+<template name="today">
+    <form>
+        <input type="text" name="task">
+        <input type="submit">
+    </form>
+    <br> <ul id="items" class="connectedSortable">{{#each todoResult}}
+    <li class="{{#if isChecked}}checked{{/if}}">
+        <input class="check-event" type="checkbox" checked={{isChecked}}> {{task}}
+        <br>
+    </li>
+    {{/each}}
+    </ul>
+</template>
+
+<template name="junk">
+    <form>
+        <input type="text" name="task">
+        <input type="submit">
+    </form>
+    <br><ul id="itemsJunk" class="connectedSortable"> {{#each todoResult}}
+    <li class="{{#if isChecked}}checked{{/if}}">
+        <input class="check-event" type="checkbox" checked={{isChecked}}> {{task}}
+        <br>
+    </li>
+    {{/each}}
+    </ul>
+</template>
+
+<template name="week">
+    <form>
+        <input type="text" name="task">
+        <input type="submit">
+    </form>
+    <br> <ul id="itemsWeek" class="connectedSortable">{{#each todoResult}}
+    <li class="{{#if isChecked}}checked{{/if}}">
+        <input class="check-event" type="checkbox" checked={{isChecked}}> {{task}}
+        <br>
+    </li>
+    {{/each}}
+    </ul>
+</template>
